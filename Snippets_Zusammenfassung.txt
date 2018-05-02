@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+git config --global     --get-regexp alias     #Aliase Auflisten
+git config --global     alias.nic commit       #Aliase Erzeugen
+git config --global     --unset alias.nic      #Alias Löschen
