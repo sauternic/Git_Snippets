@@ -1,0 +1,155 @@
+- Alle Branches Anzeigen, auch die Remotes:
+`git branch -a`
+- Nur die Remotes:
+`git branch -r`
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
+Mit den Dateien des Working Trees bzw. des Index vergleichen:
+
+$ git diff                         # Vergleich Working Tree - Index
+$ git diff [rev]                   # Vergleich Working Tree - [rev]
+$ git diff --cached                # Vergleich Index - HEAD
+$ git diff --cached [rev]          # Vergleich Index - [rev]
+
+Revisionen vergleichen:
+
+$ git diff [rev1] [rev2]           # Vergleich rev1 und rev2
+$ git diff [rev1]..[rev2]          # Analog, Vergleich rev1 und rev2
+$ git diff [rev1]..                # Vergleich rev1 und HEAD
+$ git diff [rev1]..[rev2] -- src/  # Unterschiede in src/ zwischen rev1 und rev2
+
+    Ausgabeformate: --stat, --shortstat, --name-status
+    Unterschiede zeichenweise statt zeilenweise anzeigen: --word-diff
+****************************************************************************************   
+
+
+Hochladen:
+git remote add origin https://github.com/sauternic/Test_Repo.git
+git push -u origin master
+
+Wichtiges:
+
+Aus Überwachung nehmen:
+git update-index --assume-unchanged 
+
+
++++++++++++++++++++++++++++++++++++++   
+Optionen:
+z.B.
+Kurzversion: -a   lang:   --all
+Kurzversion: -m   lang:   --message
+++++++++++++++++++++++++++++++++++++   
+
+==============================================   
+Listet alle Dateien die Überwacht werden auf:
+git ls-tree --full-tree -r HEAD
+==============================================   
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   
+Repository anlegen:
+
+- cd <>
+
+- git init
+   => .git
+(Enthält noch keine Verzeichnisse )
+
+git add *.txt
+  => bringt Dateien ins Repository
+
+Erste Projektversion erstellen:
+git commit --message "Dateien importiert"
+
+
+Weiter mit:
+git status
+git diff
+
+git log -n2
+
+
+Add und Commit in einem Schritt:
+Nur Dateien geändert ohne neue hizuzufügen.
+> git commit --all --message "Aenderung1"
+Oder:
+> git commit *.txt --message "Aenderung2"
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   
+
+******************************************************************      
+Neuer branch erstellen:
+git checkout -b neuerBranch1
+
+'Wechsel' wieder zum Master:
+git checkout master
+
+Anzeigen:
+git branch [-v]
+******************************************************************   
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""   
+Zusammenführen:
+git checkout master
+git merge neuerBranch1
+
+Nutzlos gewordener branch löschen:
+git branch -d neuerBranch1
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    
+Aenderungen im Working directory rückgängig machen bevor gestaged
+(use "git checkout -- <file>..." to discard changes in working directory)
+git checkout EntwicklungsGeschicht.txt
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    
+
+**************************************************************************    
+Letzter Commit rückgängig machen:
+Achtung ist wichtig => ~[n]
+git reset HEAD~ --hard
+
+Andere Möglichkeit:
+git revert HEAD => ging nicht!? :(
+
+==========================================================================    
+Branch löschen:
+$ git branch --delete pfeillinks
+error: The branch 'pfeillinks' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D pfeillinks'.
+==========================================================================    
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    
+Zu Testen?:
+git reset --hard baf8d5e7da9e41fcd37d63ae9483ee0b10bfac8e
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    
+
+===========================================================================     
+Backup erstellen:
+git branch backup_20140312
+Löschen:
+git branch -d backup_20140312
+===========================================================================    
+
+Frage:
+Ich möchte z.B. drei Versionen zurückspringen, ohne die nachfolgenden Versionen dabei zu verlieren. Wahlweise möchte ich die "nachfolgenden Versionen" auch killen und die Version, auf welche ich zurückgesprungen bin, als die aktuelle letzte Version behandeln. Wie ist das machbar? Was sieht git hier als Konzept vor?
+
+Antwort:
+1. Ermitteln der gewünschten Revision (in gitk oder in "git log" rausfischen)
+2a. auf den Stand zurückspringen: git reset --hard revisionshash oder
+2b. die alte Revision auschecken: git checkout revisionshash (Ergebnis nicht commitbar, muss zwangsläufig in einen anderen branch überführt werden)
+3. einen Branch zum parallelen weiterarbeiten erstellen: git branch neuername
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
+Stoppen von Überwachung:
+git update-index --assume-unchanged <datei>
+Fortsetzten:
+git update-index --no-assume-unchanged <file>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
+
+*************************************************************************************    
+Dateien aus der Überwachung:
+1. Namen der .git\info\exclude Datei hinzufügen.
+2. git rm --chached <file>
+3. git commit -a -m "Blabla"
+************************************************************************************* 

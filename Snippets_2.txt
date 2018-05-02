@@ -1,0 +1,53 @@
+Config:
+git config --global user.name sauternic
+git config --global user.email "x@gmail.com"
+git config --global core.editor notepad
+
+
+
+Git Aliase:
+git config --global alias.co commit
+git config --global alias.st status
+
+
+
+
+In Leeren Ordnern Überwachung Ausschliessen:
+# Alle Dateien bis auf .gitignore ausschliessen
+*
+!.gitignore
+
+
+
+
+
+Repository:
+- Blobs
+- Trees
+- Commits
+
+
+
+
+Zurücknehmen von Ändern aus dem stage Bereich:
+git reset HEAD .
+
+
+
+
+
+Graphische Werkzeuge:
+git gui
+gitk --all
+
+git instaweb start
+git instaweb stop
+
+
+
+
+Aenderungen zwischenspeichern:
+git stash --include-untracked
+git stash pop
+git stash list
+git stash pop stash@{1}

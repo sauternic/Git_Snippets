@@ -1,0 +1,29 @@
+Erzeugen von .gitignore?:
+Pull = fetch + merge
+
+Bei merge Konflikt abbrechen:
+git merge --abort
+
+
+
+
+Erzeugen von .gitignore?:
+vi .gitignore
+
+
+Kurznamen Erzeugen:
+git remote add <kurzname> <URL>
+
+Kurznamen Anzeigen:
+git remote --verbose
+Mehr Infos:
+git remote show <kurzname>
+
+Kurznamen löschen:
+git remote rm <name>
+
+
+Repository ohne Workspace:
+--bare mit init oder clone
+
+
