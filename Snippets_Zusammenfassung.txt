@@ -1,6 +1,16 @@
+git init   #.git Erzeugen
+git add <DateiName> | . | * | -a     #Dateien zur Überwachung hinzufügen.
+git commit [-a] -m "message"  #Mit -a kann mann add überspringen wenn nur geänderte Dateien.
 
 
 
+
+git reset head Datei1.txt   #Unstaged changes after reset: Aus Staging Area wieder herausgenommen(Wieder Rot)
+
+
+
+
+git checkout -- <file>      #discard changes in working directory
 
 
 
@@ -8,3 +18,11 @@
 git config --global     --get-regexp alias     #Aliase Auflisten
 git config --global     alias.nic commit       #Aliase Erzeugen
 git config --global     --unset alias.nic      #Alias Löschen
+
+
+
+git remote      #Ausgabe: 'origin' wenn Konfiguriert
+git remote add origin https://github.com/sauternic/Test_Repo.git  #Kurznammen setzten vor Hochladen
+git remote --verbose #Kurznamen Anzeigen wenn Konfiguriert
+git remote show origin  #Mehr Infos
+git remote rm <name>  #Kurznamen löschen

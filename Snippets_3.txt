@@ -4,13 +4,6 @@ Pull = fetch + merge
 Bei merge Konflikt abbrechen:
 git merge --abort
 
-
-
-
-Erzeugen von .gitignore?:
-vi .gitignore
-
-
 Kurznamen Erzeugen:
 git remote add <kurzname> <URL>
 
