@@ -1,0 +1,75 @@
+
+ours -> Aktueller Branch
+
+Merge Konflikte Binärdateien:
+Nur das möglich!
+-   --ours  oder --theirs
+
+Z.b
+- git checkout --theirs test/
+Dann!!
+
+Änderungen anmelden
+- git add .
+
+Commit
+- git commit
+
+*************
+
+git log --online
+-----
+-----
+-----
+
+++++++++++
+
+git clone <pfadquelle> <pfadziel>
+
+××××××××
+
+git log --graph
+
+*********************************************************************
+
+
+git pull [<pfad>] [<branch>]
+git push [<pfad>] [<branch>]
+
+Ein push repo sollte ein --bare sein.
+Wo keiner darauf Arbeitet und nur zum Austausch ist.
+git clone --bare <quellpfad> <zielpfad.git>
+
+×××××××××
+
+Changed but not updated:
+Noch nicht im Stage Bereich!
+
+++++++++++
+
+git add Verzeichnis/    #ein Verzeichnis und alles darunter.
+git add .     # aktuelles Verzeichnis und alles darunter
+
+
+
+
+Von meinem Samsung Galaxy Smartphone gesendet.
+
+***********************************************************************
+
+
+Zurücknehmen aus Stage Bereich
+git reset HEAD .
+Oder
+git reset HEAD <file> <Verzeichnis >
+
+×××××××××
+
+Denn aktiven Branch darf man nicht löschen:
+git checkout master
+git branch -d   b-branch
+
+
+
+
+Von meinem Samsung Galaxy Smartphone gesendet.

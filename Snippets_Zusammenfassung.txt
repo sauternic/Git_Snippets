@@ -10,7 +10,7 @@ git reset head Datei1.txt   #Unstaged changes after reset: Aus Staging Area wied
 
 
 
-git checkout -- <file>      #discard changes in working directory
+git checkout -- <file>      #discard changes in working directory(Gestageded Änderungen nicht)
 
 
 
