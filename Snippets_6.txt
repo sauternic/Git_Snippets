@@ -1,0 +1,33 @@
+Vernüpfung von lokalem zu remote-tracking-branch:
+git branch alpha origin/alpha
+git checkout alpha
+
+Einfacher:
+git checkout alpha
+
+×××××××××××
+
+Verknüpfung lokaler Branch mit Upstream Branches:
+git branch --list -vv
+
+**************
+
+git remote show origin
+
+~~~~~~~~~~
+
+Branches aus anderem Repo holen:
+git fetch origin    alpha master
+
+git fetch origin   # Alle branches holen
+
+git fetch   # Alle branches von 'origin' holen
+
+
+Was geholt gerade wurde?:
+git diff/log 9f366660..41c3bc4
+
+
+Welche Änderung sind noch nicht integriert?:
+git diff <alpha>...<origin/alpha>
+git log <alpha>..<origin/alpha>
