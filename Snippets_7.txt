@@ -1,3 +1,19 @@
+
+**************Wichtig!*******************************
+
+Branch beim Hochpuschen einen neuen Namem geben:
+Achtung vor und nach : keine Leerzeichen, sonst werden beide Hochlgeladen wenn Name vorhanden:
+
+git push <remote> <local_branch>:<remote_branch>
+z.B.
+git push origin2 neuergenerator:master
+
+*****************************************************
+
+
+git remote set-url <Kurzname> <URL> 
+
+
 git branch -m old_branch new_branch         # Rename branch locally    
 git push origin :old_branch                 # Delete the old branch. Ging nicht :(   
 git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote. Ging :)
