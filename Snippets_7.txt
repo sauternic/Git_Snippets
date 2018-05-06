@@ -1,0 +1,28 @@
+git branch -m old_branch new_branch         # Rename branch locally    
+git push origin :old_branch                 # Delete the old branch. Ging nicht :(   
+git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote. Ging :)
+
+*******************************************************************************************
+
+Remote ziel wechseln?
+?? git remote add origin
+git remote set-url <> <>
+
+
+Tracking Branch:
+git checkout -b [branch] [remotename]/[branch]
+
+
+Remote zweig löschen:
+git push origin :serverfix
+
+
+Lokalen branch an remote binden:
+git branch -u origin/master master
+
+
+Branch umbenennen:
+git branch -m <oldname> <newname>
+Oder:
+git branch -m <newname>
+
