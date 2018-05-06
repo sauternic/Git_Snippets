@@ -12,9 +12,12 @@ git remote --verbose
 Mehr Infos:
 git remote show <kurzname>
 
-Kurznamen löschen:
+Kurznamen lÃ¶schen:
 git remote rm <name>
-
+z.B.
+"""""""""""wichtig!""""""""
+git remote remove origin
+"""""""""""""""""""""""""""
 
 Repository ohne Workspace:
 --bare mit init oder clone
