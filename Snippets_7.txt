@@ -1,13 +1,17 @@
+*****************Wichtige Lösung! ************************************************
+Visual Lösung für Hochladen eines Entwicklungs Branches! :)))
+Ohne Einrichten eines Upstream Branches!! :))
+git push https://github.com/sauternic/Test_One.git KryptoRandom_C_Sharp:master
+**********************************************************************************
+
 
 **************Wichtig!*******************************
-
 Branch beim Hochpuschen einen neuen Namem geben:
 Achtung vor und nach : keine Leerzeichen, sonst werden beide Hochlgeladen wenn Name vorhanden:
 
 git push <remote> <local_branch>:<remote_branch>
 z.B.
 git push origin2 neuergenerator:master
-
 *****************************************************
 
 
