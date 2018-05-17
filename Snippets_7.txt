@@ -42,3 +42,6 @@ git branch -m <oldname> <newname>
 Oder:
 git branch -m <newname>
 
+Branch als temporäre Zeiger auf Commits:
+git branch tmp/der-dumme-fehler 8b167
+
