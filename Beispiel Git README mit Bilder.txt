@@ -11,7 +11,7 @@ http://htmlpreview.github.io/    **?**     https://github.com/sauternic/Test_rea
 
 Merke:
 [...](...)
-[...](http://.../blob/master/<file-name>)
+[...](http://.../blob/master/<file>)
 [...](https://github.com/sauternic/<repo>/blob/master/<file>)
 
 Merke:
