@@ -1,3 +1,7 @@
+Woher weiß Git, dass Du eine Datei umbenannt hast, obwohl Du es ihm niemals explizit mitgeteilt hast? Sicher, Du hast vielleicht git mv benutzt, aber das ist exakt das selbe wie git rm gefolgt von git add.
+
+git mv <alt> <neu>
+
 *****************Wichtige Lösung! ************************************************
 Visual Lösung für Hochladen eines Entwicklungs Branches! :)))
 Ohne Einrichten eines Upstream Branches!! :))
