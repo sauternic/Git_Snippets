@@ -4,7 +4,7 @@ Bild:
 ![Ich und Gery](https://github.com/sauternic/Test_readme_mit-Bild/blob/master/Bild.jpg)
 
 .html file als Webseite Anzeigen:
-[Vorschau der HTML Seite](http://htmlpreview.github.io/?https://github.com/sauternic/Test_readme_mit-Bild/blob/master/index.html)
+[Ausführen](http://htmlpreview.github.io/?https://github.com/sauternic/Test_readme_mit-Bild/blob/master/index.html)
 
 Merke:
 http://htmlpreview.github.io/    **?**     https://github.com/sauternic/Test_readme_mit-Bild/blob/master/index.html
