@@ -28,7 +28,14 @@ Was geholt gerade wurde?:
 git diff/log 9f366660..41c3bc4
 
 
+********************************************************
 Welche Änderung sind noch nicht integriert?:
 git diff <alpha>...<origin/alpha>
 git log <alpha>..<origin/alpha>
+
+Übernehmen:
+git fetch origin/alpha
+git merge origin/alpha
+********************************************************
+
 
