@@ -12,7 +12,7 @@ git config --global alias.st status
 
 
 
-In Leeren Ordnern Überwachung Ausschliessen:
+In Leeren Ordnern Ãœberwachung Ausschliessen:
 # Alle Dateien bis auf .gitignore ausschliessen
 *
 !.gitignore
@@ -29,7 +29,7 @@ Repository:
 
 
 
-Zurücknehmen von Ändern aus dem stage Bereich:
+ZurÃ¼cknehmen von Ã„ndern aus dem stage Bereich:
 git reset HEAD .
 
 

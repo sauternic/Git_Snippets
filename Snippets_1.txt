@@ -32,7 +32,7 @@ git push -u origin master
 
 Wichtiges:
 
-Aus Überwachung nehmen:
+Aus Ãœberwachung nehmen:
 git update-index --assume-unchanged 
 
 
@@ -44,7 +44,7 @@ Kurzversion: -m   lang:   --message
 ++++++++++++++++++++++++++++++++++++   
 
 ==============================================   
-Listet alle Dateien die Überwacht werden auf:
+Listet alle Dateien die Ãœberwacht werden auf:
 git ls-tree --full-tree -r HEAD
 ==============================================   
 
@@ -55,7 +55,7 @@ Repository anlegen:
 
 - git init
    => .git
-(Enthält noch keine Verzeichnisse )
+(EnthÃ¤lt noch keine Verzeichnisse )
 
 git add *.txt
   => bringt Dateien ins Repository
@@ -72,7 +72,7 @@ git log -n2
 
 
 Add und Commit in einem Schritt:
-Nur Dateien geändert ohne neue hizuzufügen.
+Nur Dateien geÃ¤ndert ohne neue hizuzufÃ¼gen.
 > git commit --all --message "Aenderung1"
 Oder:
 > git commit *.txt --message "Aenderung2"
@@ -90,30 +90,30 @@ git branch [-v]
 ******************************************************************   
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""   
-Zusammenführen:
+ZusammenfÃ¼hren:
 git checkout master
 git merge neuerBranch1
 
-Nutzlos gewordener branch löschen:
+Nutzlos gewordener branch lÃ¶schen:
 git branch -d neuerBranch1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    
-Aenderungen im Working directory rückgängig machen bevor gestaged
+Aenderungen im Working directory rÃ¼ckgÃ¤ngig machen bevor gestaged
 (use "git checkout -- <file>..." to discard changes in working directory)
 git checkout EntwicklungsGeschicht.txt
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    
 
 **************************************************************************    
-Letzter Commit rückgängig machen:
+Letzter Commit rÃ¼ckgÃ¤ngig machen:
 Achtung ist wichtig => ~[n]
 git reset HEAD~ --hard
 
-Andere Möglichkeit:
+Andere MÃ¶glichkeit:
 git revert HEAD => ging nicht!? :(
 
 ==========================================================================    
-Branch löschen:
+Branch lÃ¶schen:
 $ git branch --delete pfeillinks
 error: The branch 'pfeillinks' is not fully merged.
 If you are sure you want to delete it, run 'git branch -D pfeillinks'.
@@ -127,29 +127,29 @@ git reset --hard baf8d5e7da9e41fcd37d63ae9483ee0b10bfac8e
 ===========================================================================     
 Backup erstellen:
 git branch backup_20140312
-Löschen:
+LÃ¶schen:
 git branch -d backup_20140312
 ===========================================================================    
 
 Frage:
-Ich möchte z.B. drei Versionen zurückspringen, ohne die nachfolgenden Versionen dabei zu verlieren. Wahlweise möchte ich die "nachfolgenden Versionen" auch killen und die Version, auf welche ich zurückgesprungen bin, als die aktuelle letzte Version behandeln. Wie ist das machbar? Was sieht git hier als Konzept vor?
+Ich mÃ¶chte z.B. drei Versionen zurÃ¼ckspringen, ohne die nachfolgenden Versionen dabei zu verlieren. Wahlweise mÃ¶chte ich die "nachfolgenden Versionen" auch killen und die Version, auf welche ich zurÃ¼ckgesprungen bin, als die aktuelle letzte Version behandeln. Wie ist das machbar? Was sieht git hier als Konzept vor?
 
 Antwort:
-1. Ermitteln der gewünschten Revision (in gitk oder in "git log" rausfischen)
-2a. auf den Stand zurückspringen: git reset --hard revisionshash oder
-2b. die alte Revision auschecken: git checkout revisionshash (Ergebnis nicht commitbar, muss zwangsläufig in einen anderen branch überführt werden)
+1. Ermitteln der gewÃ¼nschten Revision (in gitk oder in "git log" rausfischen)
+2a. auf den Stand zurÃ¼ckspringen: git reset --hard revisionshash oder
+2b. die alte Revision auschecken: git checkout revisionshash (Ergebnis nicht commitbar, muss zwangslÃ¤ufig in einen anderen branch Ã¼berfÃ¼hrt werden)
 3. einen Branch zum parallelen weiterarbeiten erstellen: git branch neuername
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
-Stoppen von Überwachung:
+Stoppen von Ãœberwachung:
 git update-index --assume-unchanged <datei>
 Fortsetzten:
 git update-index --no-assume-unchanged <file>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
 
 *************************************************************************************    
-Dateien aus der Überwachung:
-1. Namen der .git\info\exclude Datei hinzufügen.
+Dateien aus der Ãœberwachung:
+1. Namen der .git\info\exclude Datei hinzufÃ¼gen.
 2. git rm --chached <file>
 3. git commit -a -m "Blabla"
 ************************************************************************************* 
