@@ -1,13 +1,13 @@
-Vernüpfung von lokalem zu remote-tracking-branch:
+VernÃ¼pfung von lokalem zu remote-tracking-branch:
 git branch alpha origin/alpha
 git checkout alpha
 
 Einfacher:
 git checkout alpha
 
-×××××××××××
+Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—Ã—
 
-Verknüpfung lokaler Branch mit Upstream Branches:
+VerknÃ¼pfung lokaler Branch mit Upstream Branches:
 git branch --list -vv
 
 **************
@@ -28,7 +28,7 @@ Was geholt gerade wurde?:
 git diff/log 9f366660..41c3bc4
 
 
-Welche Änderung sind noch nicht integriert?:
+Welche Ã„nderung sind noch nicht integriert?:
 git diff <alpha>...<origin/alpha>
 git log <alpha>..<origin/alpha>
 
