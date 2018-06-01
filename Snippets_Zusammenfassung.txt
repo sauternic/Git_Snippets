@@ -25,4 +25,4 @@ git remote      #Ausgabe: 'origin' wenn Konfiguriert
 git remote add origin https://github.com/sauternic/Test_Repo.git  #Kurznammen setzten vor Hochladen
 git remote --verbose #Kurznamen Anzeigen wenn Konfiguriert
 git remote show origin  #Mehr Infos
-git remote rm <name>  #Kurznamen löschen
+git remote remove <name>  #Kurznamen löschen

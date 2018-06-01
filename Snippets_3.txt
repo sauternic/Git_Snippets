@@ -13,7 +13,7 @@ Mehr Infos:
 git remote show <kurzname>
 
 Kurznamen löschen:
-git remote rm <name>
+git remote remove <name>
 z.B.
 """""""""""wichtig!""""""""
 git remote remove origin

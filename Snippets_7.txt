@@ -37,7 +37,7 @@ Tracking Branch:
 git checkout -b [branch] [remotename]/[branch]
 
 
-Remote zweig löschen:
+Remote branch löschen:
 git push origin :serverfix
 
 
