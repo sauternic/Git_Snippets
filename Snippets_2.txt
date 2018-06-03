@@ -37,8 +37,8 @@ git reset HEAD .
 
 
 Graphische Werkzeuge:
-git gui
-gitk --all
+git gui      #commiten, was gestaged ist?, autom. diff!
+gitk --all   #alle branches Anzeigen :)))
 
 git instaweb start
 git instaweb stop
@@ -51,3 +51,11 @@ git stash --include-untracked
 git stash pop
 git stash list
 git stash pop stash@{1}
+
+
+
+
+Tags:
+git tag <name> <hash>     #Erzeugen
+git tag -a <name> <hash>  #Schwergewichte Tags mit Kommentar
+git tag -d <name>         #Löschen
