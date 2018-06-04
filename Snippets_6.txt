@@ -7,8 +7,8 @@ git checkout alpha
 
 ×××××××××××
 
-Verknüpfung lokaler Branch mit Upstream Branches:
-git branch --list -vv
+Verknüpfung lokaler Branch mit Upstream Branches Anzeigen:
+git branch -vv
 
 **************
 
