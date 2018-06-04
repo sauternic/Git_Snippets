@@ -23,8 +23,8 @@ git remote set-url <Kurzname> <URL>
 
 
 git branch -m old_branch new_branch         # Rename branch locally    
-git push origin :old_branch                 # Delete the old branch. Ging nicht :(   
-git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote. Ging :)
+git push origin :<dest>                     # Delete the old branch.
+git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote.
 
 *******************************************************************************************
 
@@ -34,7 +34,7 @@ git remote set-url <> <>
 
 
 Tracking Branch:
-git checkout -b [branch] [remotename]/[branch]
+git checkout -b [branch-name] [remotename]/[branch]
 
 
 Remote branch löschen:

@@ -54,8 +54,15 @@ git stash pop stash@{1}
 
 
 
-
+ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
 Tags:
 git tag <name> <hash>     #Erzeugen
 git tag -a <name> <hash>  #Schwergewichte Tags mit Kommentar
 git tag -d <name>         #Löschen
+
+
+Remote Tags:
+git push origin <tag_name>  #Einzeln Hochladen
+git push --tags             #Alle Hochladen
+git push origin :<tag_name> #Remote Löschen(gleich wie bei remote Branches)
+tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
