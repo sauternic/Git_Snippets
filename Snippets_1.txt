@@ -1,3 +1,15 @@
+
+******************************************************************************
+Alle wichtigen Infos mit:
+git branch -a
+git remote -v
+
+git branch -vv
+*******************************************************************************
+
+
+
+
 - Alle Branches Anzeigen, auch die Remotes:
 `git branch -a`
 - Nur die Remotes:
