@@ -1,4 +1,6 @@
 Vernüpfung von lokalem zu remote-tracking-branch:
+git branch [--track] mein origin/mas
+geht ohne track!
 git branch alpha origin/alpha
 git checkout alpha
 
