@@ -33,12 +33,12 @@ Remote ziel wechseln?
 git remote set-url <> <>
 
 
-Tracking Branch:
-git checkout -b [branch-name] [remotename]/[branch]
-
-
 Remote branch löschen:
 git push origin :serverfix
+
+Remote Tracking Branch löschen:
+git branch -d -r origin/alpha
+
 
 
 Lokalen branch an remote binden:

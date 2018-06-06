@@ -10,6 +10,9 @@ git checkout alpha
 Verknüpfung lokaler Branch mit Upstream Branches Anzeigen:
 git branch -vv
 
+Remote Tracking Branch löschen:
+git branch -d -r origin/alpha
+
 **************
 
 git remote show origin

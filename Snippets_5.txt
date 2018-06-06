@@ -5,6 +5,9 @@ git checkout alpha
 Einfacher:
 git checkout alpha
 
+Remote Tracking Branch löschen:
+git branch -d -r origin/alpha
+
 ×××××××××××
 
 Verknüpfung lokaler Branch mit Upstream Branches:
