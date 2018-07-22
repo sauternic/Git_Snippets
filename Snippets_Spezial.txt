@@ -6,4 +6,5 @@ Datei wiederherstellen:
    - git checkout <commit-Hash> -- <file>
 
 3. Datei ist in Staging Area wiederhergestellt:
-   - nur noch Commiten z.b. git commit -m '<file> wiederhergestellt'
+   - nur noch Commiten z.b.:
+     git commit -m '<file> wiederhergestellt'
