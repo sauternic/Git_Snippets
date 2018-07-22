@@ -3,7 +3,7 @@ Datei wiederherstellen:
    - git log -- <file>
 
 2. Datei auschecken:
-   - git checkout -- <file>
+   - git checkout <commit-Hash> -- <file>
 
-3. Datei ist in Staging Area wiederhergestellt
-   - nur noch Commiten z.b. git commmit -m '<file> wiederhergestellt'
+3. Datei ist in Staging Area wiederhergestellt:
+   - nur noch Commiten z.b. git commit -m '<file> wiederhergestellt'
