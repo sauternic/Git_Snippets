@@ -1,0 +1,9 @@
+Datei wiederherstellen:
+1. Commit suchen wo noch da ist:
+   - git log -- <file>
+
+2. Datei auschecken:
+   - git checkout -- <file>
+
+3. Datei ist in Staging Area wiederhergestellt
+   - nur noch Commiten z.b. git commmit -m '<file> wiederhergestellt'
