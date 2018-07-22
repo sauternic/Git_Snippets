@@ -1,6 +1,6 @@
 Datei wiederherstellen:
 1. Commit suchen wo <file> noch da ist:
-   - git log -- 
+   - git log -- <file>
 
 2. Datei auschecken:
    - git checkout <commit-Hash> -- <file>
