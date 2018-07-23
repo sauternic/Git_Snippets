@@ -50,7 +50,7 @@ git push -u origin master
 Wichtiges:
 
 Aus Überwachung nehmen:
-git update-index --assume-unchanged 
+git update-index --assume-unchanged <file> 
 
 
 +++++++++++++++++++++++++++++++++++++   
@@ -166,7 +166,9 @@ git update-index --no-assume-unchanged <file>
 
 *************************************************************************************    
 Dateien aus der Überwachung:
-1. Namen der .git\info\exclude Datei hinzufügen.
-2. git rm --chached <file>
-3. git commit -a -m "Blabla"
+1. git rm --chached <file>
+   - <file> ist wieder 'untracked'
+
+2. <file> in  .gitignor  eintragen.
+3. git commit -a -m "<file> aus Überwachung genommen"
 ************************************************************************************* 
