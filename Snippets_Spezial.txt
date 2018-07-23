@@ -1,4 +1,8 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 Datei wiederherstellen:
+=======================
+
 1. Commit suchen wo <file> noch da ist:
    - git log -- <file>
 
@@ -8,3 +12,25 @@ Datei wiederherstellen:
 3. Datei ist in Staging Area wiederhergestellt:
    - nur noch Commiten z.b.:
      git commit -m '<file> wiederhergestellt'
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+*****************************************************************
+
+Datei aus Überwachung rausnehmen, wenn schon im Repo:
+=====================================================
+
+Ganz einfach:
+git rm --cached <file>   #bleibt im working tree, löscht nur im Repo.
+    ___________
+    
+Der Rest ist eigentlich klar:
+<file> ist wieder 'untracked', und somit kann es in .gitignore
+geschrieben werden, danach ist es weg bei  'git status'
+
+Tipp:
+Immer wieder mit  'git status'  die Situation anschauen.
+
+*******************************************************************
