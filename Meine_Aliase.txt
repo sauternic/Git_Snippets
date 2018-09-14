@@ -1,0 +1,12 @@
+$ git configa
+alias.st status
+alias.co commit
+alias.ch checkout
+alias.br branch
+alias.re remote
+alias.loga log --all --oneline --graph
+alias.configa config --global --get-regexp alias
+alias.diffz diff --color-words=.
+alias.mergen merge --no-ff
+alias.diffs diff --staged
+alias.diffsz diff --staged --color-words=.
