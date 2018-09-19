@@ -7,11 +7,22 @@ git diff --color-words=.
 ******************************************************************************
 Alle wichtigen Infos mit:
 git branch -a
+git branch -vv
+
 git remote -v
 
-git branch -vv
+
+
 ******************************************************************************
 ******************************************************************************
+
+
+Sich Retten bei Unklaren merge Konfklikten:
+Bei merge Konflikt abbrechen:
+
+git merge --abort
+=================
+
 
 
 
