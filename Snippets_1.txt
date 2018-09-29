@@ -17,20 +17,17 @@ git remote -v
 ******************************************************************************
 
 
-Sich Retten bei Unklaren merge Konfklikten:
+Sich Retten bei unklaren merge Konfklikten:
 Bei merge Konflikt abbrechen:
 
 git merge --abort
 =================
 
+oder:
+(weil 'Auto-merging' z.b. nach git stash pop, weil zuerst vergessen wurde, nach Rückkehr auf gestashden branch :(  )
 
-
-
-- Alle Branches Anzeigen, auch die Remotes:
-`git branch -a`
-- Nur die Remotes:
-`git branch -r`
-
+git reset --hard head
+=====================
 
 
 
