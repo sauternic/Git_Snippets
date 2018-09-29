@@ -29,6 +29,13 @@ oder:
 git reset --hard head
 =====================
 
+Merke  =====>   Aber eigentlich nie schlimme git schreibt was in die Datei rein das kann man anpassen
+und commiten!!! Fertig (Konflikt bereinigt).
+
+Was reingeschrieben wurde ob von git wie oben, oder von mir gibt ne rote Datei(modified)
+Bei (Auto)-merging Konflikten wird sie rot als 'both modified' bezeichnet.
+                                                ==== 
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
