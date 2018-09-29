@@ -23,11 +23,16 @@ Bei merge Konflikt abbrechen:
 git merge --abort
 =================
 
-oder:
-(weil 'Auto-merging' z.b. nach git stash pop, weil zuerst vergessen wurde, nach Rückkehr auf gestashden branch :(  )
+
+oder(wenn obiges nicht geht):
+(weil 'Auto-merging')
 
 git reset --hard head
 =====================
+oder
+git reset head   und   git checkout .
+=================================
+
 
 Merke  =====>   Aber eigentlich nie schlimm, git schreibt was in die Datei rein, das kann man Anpassen
 und Commiten!!! Fertig (Konflikt bereinigt).
