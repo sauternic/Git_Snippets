@@ -1,13 +1,22 @@
 
+*****************************************************************
+
 ours -> Aktueller Branch
 
-Merge Konflikte Binärdateien:
+
+Merge Konflikte Binärdateien
+============================
+
 Nur das möglich!
 -   --ours  oder --theirs
 
 Z.b
-- git checkout --theirs test/
-Dann!!
+- git checkout --theirs Nicolas.jpg
+
+Dann:
+
+(--ours    Version von aktuellem Branch Übernehmen)
+(--theirs  Version von anderem/einfliessenden Branch Übernehmen)
 
 Änderungen anmelden
 - git add .
@@ -15,7 +24,7 @@ Dann!!
 Commit
 - git commit
 
-*************
+*******************************************************************
 
 git log --oneline #Nur eine Linie pro commit
 oder:

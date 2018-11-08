@@ -1,11 +1,18 @@
 ******************************************************************************
 
-Aenderungen Zeichenweise Anzeigen:
+Aenderungen Zeichenweise Anzeigen
+=================================
+
 git diff --color-words=.
+
 
 ******************************************************************************
 ******************************************************************************
-Alle wichtigen Infos mit:
+
+
+Alle wichtigen Infos mit
+========================
+
 git branch -a
 git branch -vv
 
@@ -80,13 +87,19 @@ Kurzversion: -a   lang:   --all
 Kurzversion: -m   lang:   --message
 ++++++++++++++++++++++++++++++++++++   
 
-==============================================   
-Listet alle Dateien die Überwacht werden auf:
+
+Listet alle Dateien die Überwacht werden auf
+============================================
+
 git ls-tree --full-tree -r HEAD
-==============================================   
+
+
+  
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   
-Repository anlegen:
+
+Repository anlegen
+==================
 
 - cd <>
 
@@ -113,9 +126,13 @@ Nur Dateien geändert ohne neue hizuzufügen.
 > git commit --all --message "Aenderung1"
 Oder:
 > git commit *.txt --message "Aenderung2"
+
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   
 
 ******************************************************************      
+
+
 Neuer branch erstellen:
 git checkout -b neuerBranch1
 
@@ -123,50 +140,57 @@ git checkout -b neuerBranch1
 git checkout master
 
 Anzeigen:
-git branch [-v]
+git branch [-v](mit Kommentar)
+
+
+
 ******************************************************************   
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""   
-Zusammenführen:
+
+Zusammenführen
+==============
+
 git checkout master
 git merge neuerBranch1
 
-Nutzlos gewordener branch löschen:
+
+Nutzlos gewordener branch löschen
+=================================
+
 git branch -d neuerBranch1
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
+
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    
+
 Aenderungen im Working directory rückgängig machen bevor gestaged
 (use "git checkout -- <file>..." to discard changes in working directory)
 git checkout EntwicklungsGeschicht.txt
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    
 
+
 **************************************************************************    
-Letzter Commit rückgängig machen:
-Achtung ist wichtig => ~[n]
-git reset HEAD~ --hard
+
+Letzter Commit rückgängig machen
+================================
+
+git reset --hard HEAD~1 
 
 Andere Möglichkeit:
-git revert HEAD => ging nicht!? :(
+git revert <commit> (macht den angegeben Commit rückgängig mit einem neuen Commit)
+
 
 ==========================================================================    
-Branch löschen:
+
+Branch löschen
+==============
+
 $ git branch --delete pfeillinks
 error: The branch 'pfeillinks' is not fully merged.
 If you are sure you want to delete it, run 'git branch -D pfeillinks'.
+
 ==========================================================================    
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    
-Zu Testen?:
-git reset --hard baf8d5e7da9e41fcd37d63ae9483ee0b10bfac8e
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    
-
-===========================================================================     
-Backup erstellen:
-git branch backup_20140312
-Löschen:
-git branch -d backup_20140312
-===========================================================================    
 
 Frage:
 Ich möchte z.B. drei Versionen zurückspringen, ohne die nachfolgenden Versionen dabei zu verlieren. Wahlweise möchte ich die "nachfolgenden Versionen" auch killen und die Version, auf welche ich zurückgesprungen bin, als die aktuelle letzte Version behandeln. Wie ist das machbar? Was sieht git hier als Konzept vor?
@@ -178,17 +202,30 @@ Antwort:
 3. einen Branch zum parallelen weiterarbeiten erstellen: git branch neuername
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
-Stoppen von Überwachung:
+
+Stoppen von Überwachung
+=======================
+
 git update-index --assume-unchanged <datei>
+
 Fortsetzten:
+
 git update-index --no-assume-unchanged <file>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
 
+
 *************************************************************************************    
-Dateien aus der Überwachung:
+
+Dateien aus der Überwachung
+===========================
+
 1. git rm --chached <file>
    - <file> ist wieder 'untracked'
 
 2. <file> in  .gitignor  eintragen.
-3. git commit -a -m "<file> aus Überwachung genommen"
+
+3. Mit  'git status'  Schauen ob verschwunden als untracked file?
+
+[4. git commit -a -m "<file> aus Überwachung genommen"]
 ************************************************************************************* 
