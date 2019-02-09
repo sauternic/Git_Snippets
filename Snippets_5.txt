@@ -12,8 +12,11 @@ git branch -d -r origin/alpha
 
 ×××××××××××
 
-Verknüpfung lokaler Branch mit Upstream Branches:
+Verknüpfungen Anzeigen lokaler Branch mit Upstream Branches:
 git branch -vv
+
+Verknüpfung lokaler Branch mit Upstream Branch lösen:
+git br --unset-upstream master (nur immer 1 Branch aufs mal möglich)
 
 **************
 
