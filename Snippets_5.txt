@@ -10,15 +10,22 @@ git checkout alpha
 Remote Tracking Branch löschen:
 git branch -d -r origin/alpha
 
-×××××××××××
+************************************************************************
 
 Verknüpfungen Anzeigen lokaler Branch mit Upstream Branches:
 git branch -vv
 
-Verknüpfung lokaler Branch mit Upstream Branch lösen:
-git br --unset-upstream master (nur immer 1 Branch aufs mal möglich)
+('-u' = '--set-upstream-to')
 
-**************
+Verknüpfung lokaler Branch mit Upstream Branch lösen:
+git branch --unset-upstream master (nur immer 1 Branch aufs mal möglich)
+
+Verknüpfung Einrichten: (beachte zuerst Upstream Branch Angeben)
+git branch -u gh-origin/master master
+
+(Wird aber normalerweise beim 'push' gemacht mit Option -u)
+
+************************************************************************
 
 git remote show origin
 
