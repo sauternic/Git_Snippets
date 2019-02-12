@@ -40,7 +40,7 @@ git fetch   # Alle branches von 'origin' holen
 
 Was geholt gerade wurde?:
 git diff/log 9f366660..41c3bc4
-
+(Tipp: 'gitk --all' öffnen! ;)  )
 
 ********************************************************
 Welche Änderung sind noch nicht integriert?:
@@ -48,8 +48,10 @@ git diff <alpha>...<origin/alpha>
 git log <alpha>..<origin/alpha>
 
 Übernehmen:
-git fetch origin/alpha
 git merge origin/alpha
+
+(siehe immer zuerst mit 'git status')
+Da wird 'git pull' zum Übernehmen empfohlen.
 ********************************************************
 
 
