@@ -3,11 +3,10 @@ Vernüpfung von lokalem zu remote-tracking-branch:
 Achtung!!! geht nur wenn noch kein gleichnamiger lokaler Branch vorhanden.
 Sonst siehr weiter Unten mit -u
 
-git branch [--track] mein origin/mas
+git branch [--track] feature origin/feature
 geht ohne track!
-git branch alpha origin/alpha
-git checkout alpha
 
+git branch alpha origin/alpha
 Einfacher:
 git checkout alpha
 
@@ -30,10 +29,6 @@ git branch -u gh-origin/master master
 (Wird aber normalerweise beim 'push' gemacht mit Option -u)
 
 ************************************************************************
-
-git remote show origin
-
-~~~~~~~~~~
 
 Branches aus anderem Repo holen:
 git fetch origin    alpha master
