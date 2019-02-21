@@ -47,10 +47,17 @@ git instaweb stop
 
 
 Aenderungen zwischenspeichern:
-git stash --include-untracked
+git stash [--include-untracked]
 git stash pop
-git stash list
-git stash pop stash@{1}
+
+git stash list  
+git stash pop stash@{1}  #Auswählen aus der Liste wenn mehrere
+
+git stash clear          #Alle Löschen
+
+        
+
+
 
 
 
