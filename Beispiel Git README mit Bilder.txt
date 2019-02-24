@@ -1,13 +1,20 @@
 # Test_readme_mit-Bild
 
+
 Bild:
 ![Ich und Gery](https://github.com/sauternic/Test_readme_mit-Bild/blob/master/Bild.jpg)
 
-.html file als Webseite Anzeigen:
-[Ausführen](http://htmlpreview.github.io/?https://github.com/sauternic/Test_readme_mit-Bild/blob/master/index.html)
 
+index.html file als Webseite Anzeigen:
+'GitHub Pages' -> Zu finden auf 'Settings/GitHub Pages'
+Erklärvideo:
+https://www.youtube.com/watch?v=TvJXACCwkC8
+
+Alternativ:
+[Ausführen](http://htmlpreview.github.io/?https://github.com/sauternic/Test_readme_mit-Bild/blob/master/index.html)
 Merke:
 http://htmlpreview.github.io/    **?**     https://github.com/sauternic/Test_readme_mit-Bild/blob/master/index.html
+
 
 Merke:
 [...](...)
