@@ -14,6 +14,7 @@ git checkout -- <file>      #discard changes in working directory(Gestageded Än
 
 
 
+git config --list                              #Gesamte Config auflisten
 
 git config --global     --get-regexp alias     #Aliase Auflisten
 git config --global     alias.nic commit       #Aliase Erzeugen
